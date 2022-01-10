@@ -1,5 +1,5 @@
 {% set name = "aws-sso-lib" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-sso-lib-{{ version }}.tar.gz
-  sha256: ae12ee0cf4329593be55ba985591b337bf7c74f58f2b33d165483dc166fafbf4
+  sha256: d278c7ca3adb0dc1e4ea05c24621ff109786d771928950e939d0285d040036f3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
