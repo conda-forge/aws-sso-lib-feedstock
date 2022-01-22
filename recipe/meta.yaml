@@ -11,7 +11,7 @@ source:
   sha256: 2f4e2d10c85286598bab665d8c64dcf8dd3f958fb87dcc9a51967605cf9761ec
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6,<4.0
   run:
     - aws-error-utils >=1.0.4,<2.0.0
-    - boto3 >=1.17.20,<2.0.0
+    - boto3 >=1.20.28,<2.0.0
     - python >=3.6,<4.0
 
 test:
