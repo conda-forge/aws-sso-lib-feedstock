@@ -1,5 +1,5 @@
 {% set name = "aws-sso-lib" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-sso-lib-{{ version }}.tar.gz
-  sha256: 809ec5dcdcd84d62141ade6490ced369836ea237d5bcb2a69aac1dd93e15c49f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b0203a64ccb66ba78f99ef3d0eb669affe7bc323f6ab9caac97f35c21a03cea5
 
 build:
   number: 0
